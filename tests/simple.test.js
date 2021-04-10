@@ -5,9 +5,9 @@ describe('Root Suite', () => {
     console.log("##teamcity[testSuiteStarted name='nestedSuiteName']");
     console.log("##teamcity[testStarted name='package_or_namespace.ClassName.TestName']");
 
-    console.log("##teamcity[testMetadata testName='package.Test.testName' name='setUp time' type='number' value='434.5']");
-    console.log("##teamcity[testMetadata testName='package.Test.testName' name='some key' value='a text']");
-    console.log("##teamcity[testMetadata testName='test.name' name='JetBrains' type='link' value='https://jetbrains.com']");
+    console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName.TestName' name='setUp time' type='number' value='434.5']");
+    console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName.TestName' name='some key' value='a text']");
+    console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName.TestName' name='JetBrains' type='link' value='https://jetbrains.com']");
 
     console.log("##teamcity[testFinished name='package_or_namespace.ClassName.TestName']");
     console.log("##teamcity[testSuiteFinished name='nestedSuiteName']");
