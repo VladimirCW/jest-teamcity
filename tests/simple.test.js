@@ -10,7 +10,7 @@ describe('Root Suite', () => {
     console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName.TestName' name='some key' value='a text']");
     console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName.TestName' name='JetBrains' type='link' value='https://jetbrains.com']");
 
-    console.log("##teamcity[testFailed name='package_or_namespace.ClassName.TestName' message='The number must be 20000' details='junit.framework.AssertionFailedError: expected:<20000> but was:<10000>|n|r    at junit.framework.Assert.fail(Assert.java:47)|n|r    at junit.framework.Assert.failNotEquals(Assert.java:280)|n|r...']");
+    console.log("##teamcity[testFailed name='package_or_namespace.ClassName.TestName' type='comparisonFailure' message='The number must be 20000' details='junit.framework.AssertionFailedError: expected:<20000> but was:<10000>|n|r    at junit.framework.Assert.fail(Assert.java:47)|n|r    at junit.framework.Assert.failNotEquals(Assert.java:280)|n|r...'] details='SOME detailed message' expected='expected value' actual='actual value'");
     console.log("##teamcity[testFinished name='package_or_namespace.ClassName.TestName']");
     console.log("##teamcity[testSuiteFinished name='nestedSuiteName']");
 
