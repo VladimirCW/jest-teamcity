@@ -1,6 +1,9 @@
 describe('Root Suite', () => {
   it('Root IT', () => {
     console.log('root IT stdout');
+
+    console.log("##teamcity[inspectionType id='123' name='InspectionType' description='InspectionDescribe' category='inspectionCategory']");
+
     console.log("##teamcity[testSuiteStarted name='suiteName']");
 
     console.log("##teamcity[testSuiteStarted name='nestedSuiteName']");
