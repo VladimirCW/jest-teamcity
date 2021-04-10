@@ -16,7 +16,7 @@ describe('Root Suite', () => {
 
 
     console.log("##teamcity[testSuiteStarted name='nestedSuiteName2']");
-    console.log("##teamcity[testStarted name='package_or_namespace.ClassName.TestName' captureStandardOutput='<true>']");
+    console.log("##teamcity[testStarted name='package_or_namespace.ClassName.TestName' captureStandardOutput='true']");
     console.log("Captured STDOUT");
 
     console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName.TestName' name='setUp time' type='number' value='434.5']");
