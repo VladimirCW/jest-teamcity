@@ -43,15 +43,15 @@ describe('Root Suite', () => {
     console.log("##teamcity[testSuiteStarted name='nestedSuiteName2' flowId='MainFlow']");
       console.log("##teamcity[flowStarted flowId='SubFlow1-c' parent='MainFlow']");
       // test start package_or_namespace.ClassName.TestName
-      console.log("##teamcity[testStarted name='package_or_namespace.ClassName2.TestName-c' flowId='SubFlow1-c']");
+      console.log("##teamcity[testStarted name='package_or_namespace2.ClassName2.TestName-c' flowId='SubFlow1-c']");
 
-        console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName2.TestName-c' name='setUp time' type='number' value='434.5' flowId='SubFlow1-c']");
-        console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName2.TestName-c' name='some key' value='a text' flowId='SubFlow1-c']");
-        console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName2.TestName-c' name='JetBrainsLink' type='link' value='https://jetbrains.com' flowId='SubFlow1-c']");
-        console.log("##teamcity[testMetadata testName='package_or_namespace.ClassName2.TestName-c' type='artifact' value='images/castle.gif' flowId='SubFlow1-c']");
+        console.log("##teamcity[testMetadata testName='package_or_namespace2.ClassName2.TestName-c' name='setUp time' type='number' value='434.5' flowId='SubFlow1-c']");
+        console.log("##teamcity[testMetadata testName='package_or_namespace2.ClassName2.TestName-c' name='some key' value='a text' flowId='SubFlow1-c']");
+        console.log("##teamcity[testMetadata testName='package_or_namespace2.ClassName2.TestName-c' name='JetBrainsLink' type='link' value='https://jetbrains.com' flowId='SubFlow1-c']");
+        console.log("##teamcity[testMetadata testName='package_or_namespace2.ClassName2.TestName-c' type='artifact' value='images/castle.gif' flowId='SubFlow1-c']");
 
-        console.log("##teamcity[testFailed name='package_or_namespace.ClassName2.TestName-c' type='comparisonFailure' message='The number must be 20000' details='junit.framework.AssertionFailedError: expected:<20000> but was:<10000>|n|r    at junit.framework.Assert.fail(Assert.java:47)|n|r    at junit.framework.Assert.failNotEquals(Assert.java:280)|n|r...' expected='expected value' actual='actual value' flowId='SubFlow1-c']");
-      console.log("##teamcity[testFinished name='package_or_namespace.ClassName2.TestName-c' flowId='SubFlow1-c']");
+        console.log("##teamcity[testFailed name='package_or_namespace2.ClassName2.TestName-c' type='comparisonFailure' message='The number must be 20000' details='junit.framework.AssertionFailedError: expected:<20000> but was:<10000>|n|r    at junit.framework.Assert.fail(Assert.java:47)|n|r    at junit.framework.Assert.failNotEquals(Assert.java:280)|n|r...' expected='expected value' actual='actual value' flowId='SubFlow1-c']");
+      console.log("##teamcity[testFinished name='package_or_namespace2.ClassName2.TestName-c' flowId='SubFlow1-c']");
       //test finish package_or_namespace.ClassName.TestName
       console.log("##teamcity[flowFinished flowId='SubFlow1-c']");
 
