@@ -2,9 +2,9 @@ describe('Root Suite', () => {
   it('Root IT', () => {
     console.log('root IT stdout');
 
-    console.log("##teamcity[inspectionType id='123' name='InspectionType' description='InspectionDescribe' category='inspectionCategory']");
+    //console.log("##teamcity[inspectionType id='123' name='InspectionType' description='InspectionDescribe' category='inspectionCategory']");
 
-    console.log("##teamcity[testSuiteStarted name='suiteName' flowStarted flowId='MainFlow']");
+    console.log("##teamcity[testSuiteStarted name='suiteName' flowId='MainFlow']");
 
       console.log("##teamcity[testSuiteStarted name='nestedSuiteName' flowId='MainFlow']");
         console.log("##teamcity[testStarted name='package_or_namespace.ClassName.TestName' flowStarted flowId='SubFlow1' parent='MainFlow']");
@@ -42,7 +42,7 @@ describe('Root Suite', () => {
         console.log("##teamcity[testFinished name='package_or_namespace.ClassName3.TestName' flowFinished flowId='SubFlow3']");
       console.log("##teamcity[testSuiteFinished name='nestedSuiteName3']");
 
-    console.log("##teamcity[testSuiteFinished name='suiteName' flowFinished flowId='MainFlow']");
+    console.log("##teamcity[testSuiteFinished name='suiteName' flowId='MainFlow']");
     expect(true).toEqual(false);
   });
 })
